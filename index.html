@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <title>DENIS NOVIK</title>
+</head>
+
+<body class="scroll">
+  <div class="wrapper">
+    <header class="header">
+      <!-- <div class="line"></div>  -->
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="menu not-active">
+        <ul class="menu__list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+        <div class="lang">
+          <button class="lang__ru" name="ru">RU</button>
+          <span id="ne-balka-a-colona">|</span>
+          <button class="lang__eng" name="eng">ENG</button>
+        </div>
+      </nav>
+
+      <div class="header__info">
+        <h1 class="header__heading"><br></h1>
+        <p class="text">UX|UI designer<br>24&nbsp;years old, Minsk</p>
+      </div>
+      <div class="header__wrapper">
+        <picture>
+          <source srcset="./img/Denis-desktop.jpg" media="(min-width: 769px), (orientation: landscape)">
+          <source srcset="./img/Denis-mobile.jpg" media="(max-width: 768px">
+          <img src="./img./Denis-desktop" alt="Denis's photo">
+        </picture>
+      </div>
+    </header>
+
+    <main>
+      <section class="about">
+        <h2 class="about__heading heading">About&nbsp;me</h2>
+        <ul class="about__description text">
+          <li class="about__description-item">
+            Hi, I&rsquo;m Denis&nbsp;&mdash; UX/UI designer from<br>Minsk. I&rsquo;m interested in&nbsp;design
+            and<br>everything connected with&nbsp;it.
+          </li>
+          <li class="about__description-item">
+            I&rsquo;m studying at&nbsp;courses<br>&laquo;Web and mobile design interfaces&raquo;<br>in&nbsp;IT-Academy.
+          </li>
+          <li class="about__description-item">
+            Ready to&nbsp;implement excellent<br>projects with wonderful people.
+          </li>
+        </ul>
+      </section>
+      <section class="skills">
+        <h2 class="skills__heading heading">Skills</h2>
+        <p class="skills__description text">I&nbsp;work in&nbsp;such programs&nbsp;as</p>
+        <div class="skillbox">
+          <!-- Adobe Photoshop -->
+          <figure class="skillbox__card">
+            <img src="./img/icon/Ps-icon.svg" class="skillbox__icon" alt="Adobe Photoshop icon">
+            <figcaption>Adobe<br>Photoshop</figcaption>
+            <img src="./img/icon/4stars.svg" class="skillbox__grade" alt="The ability to use Adobe Photoshop 4 of 5">
+          </figure>
+          <!-- Adobe Illustrator -->
+          <figure class="skillbox__card">
+            <img src="./img/icon/AI-icon.svg" class="skillbox__icon" alt="Adobe Illustrator icon">
+            <figcaption>Adobe<br>Illustrator</figcaption>
+            <img src="./img/icon/3stars-icon.svg" class="skillbox__grade"
+              alt="The ability to use Adobe Illustrator 3 of 5">
+          </figure>
+          <!-- Adobe After Effects -->
+          <figure class="skillbox__card">
+            <img src="./img/icon/Ae-icon.svg" class="skillbox__icon" alt="Adobe After Effects icon">
+            <figcaption>Adobe<br>After Effects</figcaption>
+            <img src="./img/icon/4stars.svg" class="skillbox__grade"
+              alt="The ability to use Adobe After Effects 4 of 5">
+          </figure>
+          <!-- Figma -->
+          <figure class="skillbox__card">
+            <img src="./img/icon/figma-icon.svg" class="skillbox__icon" alt="Figma icon">
+            <figcaption>Figma</figcaption>
+            <img src="./img/icon/4stars.svg" class="skillbox__grade" alt="The ability to use Figma 4 of 5">
+          </figure>
+        </div>
+      </section>
+      <section class="portfolio">
+        <h2 class="portfolio__heading heading">Portfolio</h2>
+        <div class="portfolio__card">
+          <picture>
+            <source srcset="./img/desk-fashion-store_web.jpg" media="(min-width: 769px)">
+            <source srcset="./img/mob-fashion-store_web.jpg" media="(max-width: 768px)">
+            <img src="./img/desk-fashion-store_web.jpg" alt="Picture of the home page of the online fashion store">
+          </picture>
+          <h3 class="portfolio__card-title text">Online fashion store&nbsp;&mdash; Homepage</h3>
+        </div>
+        <div class="portfolio__card">
+          <picture>
+            <source srcset="./img/desk-reebok_web.jpg" media="(min-width: 769px)">
+            <source srcset="./img/mob-reebok_web.jpg" media="(max-width: 768px)">
+            <img src="./img/desk-reebok_web.jpg"
+              alt="Picture of&nbsp;the concept of&nbsp;the &laquo;Reebok&raquo; online store">
+          </picture>
+          <h3 class="portfolio__card-title text">Reebok Store&nbsp;&mdash; Concept</h3>
+        </div>
+        <div class="portfolio__card">
+          <picture>
+            <source srcset="./img/desk-braun_web.jpg" media="(min-width: 769px)">
+            <source srcset="./img/mob-braun_web.jpg" media="(max-width: 768px)">
+            <img src="./img/desk-braun_web.jpg" alt="Picture of&nbsp;the concept landing page &laquo;Braun&raquo;">
+          </picture>
+          <h3 class="portfolio__card-title text">Braun Landing Page&nbsp;&mdash; Concept</h3>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <h2 class="footer__heading heading">Contacts</h2>
+      <p class="footer__text text">Want to&nbsp;know more or&nbsp;just chat?<br>You are welcome!</p>
+      <button class="footer__button text">Send message</button>
+      <div class="footer__social-icons">
+        <a href="#"><img src="./img/icon/linkedIn-icon.svg" class="social-icon" alt="LinkedIn"></a>
+        <a href="#"><img src="./img/icon/instagram-icon.svg" class="social-icon" alt="Instagram"></a>
+        <a href="#"><img src="./img/icon/behance-icon.svg" class="social-icon" alt="Behance"></a>
+        <a href="#"><img src="./img/icon/dribble-icon.svg" class="social-icon" alt="Dribble"></a>
+      </div>
+      <p class="footer__follow-me text">
+        Like me&nbsp;on<br><a href="#">LinkedIn</a>, <a href="#">Instagram</a>, <a href="#">Behance</a>, <a
+          href="#">Dribble</a>
+      </p>
+    </footer>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
