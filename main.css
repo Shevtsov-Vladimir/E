@@ -379,7 +379,7 @@ a[href]:not([class]) {
     height: auto;
 }
 
-.hidden.active {
+body.active {
     overflow: hidden;
 }
 
