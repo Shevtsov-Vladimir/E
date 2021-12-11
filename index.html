@@ -9,11 +9,11 @@
   <title>DENIS NOVIK</title>
 </head>
 
-<body class="scroll">
+<body>
   <div class="wrapper">
-    <header class="header">
+    <header class="header" id="home">
       <!-- <div class="line"></div>  -->
-      <nav class="menu not-active">
+      <nav class="menu">
         <div class="menu-icon">
           <span></span>
           <span></span>
@@ -21,50 +21,52 @@
         </div>
         <div class="menu__container">
           <ul class="menu__list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contacts</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacts">Contacts</a></li>
           </ul>
-          <div class="lang">
+          <!-- <div class="lang" id="lng">
             <button class="lang__ru" name="ru">RU</button>
             <span id="ne-balka-a-colona">|</span>
             <button class="lang__eng" name="eng">ENG</button>
-          </div>
+          </div> -->
         </div>
       </nav>
 
       <div class="header__info">
-        <h1 class="header__heading"><br></h1>
+        <h1 class="header__heading"></h1>
         <p class="text">UX|UI designer<br>24&nbsp;years old, Minsk</p>
       </div>
       <div class="header__wrapper">
         <picture>
           <source srcset="./img/Denis-desktop.jpg" media="(min-width: 769px), (orientation: landscape)">
-          <source srcset="./img/Denis-mobile.jpg" media="(max-width: 768px">
+          <source srcset="./img/Denis-mobile.jpg" media="(max-width: 768px)">
           <img src="./img./Denis-desktop" alt="Denis's photo">
         </picture>
       </div>
     </header>
-
-    <main>
-      <section class="about">
+    <main class="main">
+      <section class="about" id="about">
         <h2 class="about__heading heading">About&nbsp;me</h2>
         <ul class="about__description text">
           <li class="about__description-item">
-            Hi, I&rsquo;m Denis&nbsp;&mdash; UX/UI designer from<br>Minsk. I&rsquo;m interested in&nbsp;design
-            and<br>everything connected with&nbsp;it.
+            Hi, I&rsquo;m Denis&nbsp;&mdash; UX/UI designer from <br id="mobile__carryover">Minsk.<br
+              id="desktop__carryover"> I&rsquo;m interested in&nbsp;design
+            and<br id="mobile__carryover"> everything connected with&nbsp;it.
           </li>
           <li class="about__description-item">
-            I&rsquo;m studying at&nbsp;courses<br>&laquo;Web and mobile design interfaces&raquo;<br>in&nbsp;IT-Academy.
+            I&rsquo;m studying at&nbsp;courses <br id="mobile__carryover">&laquo;Web and mobile design <br
+              id="desktop__carryover"> interfaces&raquo;<br id="mobile__carryover"> in&nbsp;IT-Academy.
           </li>
           <li class="about__description-item">
-            Ready to&nbsp;implement excellent<br>projects with wonderful people.
+            Ready to&nbsp;implement excellent<br id="mobile__carryover"> projects<br id="desktop__carryover"> with
+            wonderful people.
           </li>
         </ul>
       </section>
-      <section class="skills">
+      <section class="skills" id="skills">
         <h2 class="skills__heading heading">Skills</h2>
         <p class="skills__description text">I&nbsp;work in&nbsp;such programs&nbsp;as</p>
         <div class="skillbox">
@@ -96,7 +98,7 @@
           </figure>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio text" id="portfolio">
         <h2 class="portfolio__heading heading">Portfolio</h2>
         <div class="portfolio__card">
           <picture>
@@ -104,7 +106,7 @@
             <source srcset="./img/mob-fashion-store_web.jpg" media="(max-width: 768px)">
             <img src="./img/desk-fashion-store_web.jpg" alt="Picture of the home page of the online fashion store">
           </picture>
-          <h3 class="portfolio__card-title text">Online fashion store&nbsp;&mdash; Homepage</h3>
+          <h3 class="portfolio__card-title">Online fashion store&nbsp;&mdash; Homepage</h3>
         </div>
         <div class="portfolio__card">
           <picture>
@@ -113,7 +115,7 @@
             <img src="./img/desk-reebok_web.jpg"
               alt="Picture of&nbsp;the concept of&nbsp;the &laquo;Reebok&raquo; online store">
           </picture>
-          <h3 class="portfolio__card-title text">Reebok Store&nbsp;&mdash; Concept</h3>
+          <h3 class="portfolio__card-title">Reebok Store&nbsp;&mdash; Concept</h3>
         </div>
         <div class="portfolio__card">
           <picture>
@@ -121,13 +123,13 @@
             <source srcset="./img/mob-braun_web.jpg" media="(max-width: 768px)">
             <img src="./img/desk-braun_web.jpg" alt="Picture of&nbsp;the concept landing page &laquo;Braun&raquo;">
           </picture>
-          <h3 class="portfolio__card-title text">Braun Landing Page&nbsp;&mdash; Concept</h3>
+          <h3 class="portfolio__card-title">Braun Landing Page&nbsp;&mdash; Concept</h3>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer text" id="contacts">
       <h2 class="footer__heading heading">Contacts</h2>
-      <p class="footer__text text">Want to&nbsp;know more or&nbsp;just chat?<br>You are welcome!</p>
+      <p class="footer__text">Want to&nbsp;know more or&nbsp;just chat?<br>You are welcome!</p>
       <button class="footer__button text">Send message</button>
       <div class="footer__social-icons">
         <a href="#"><img src="./img/icon/linkedIn-icon.svg" class="social-icon" alt="LinkedIn"></a>
@@ -135,12 +137,13 @@
         <a href="#"><img src="./img/icon/behance-icon.svg" class="social-icon" alt="Behance"></a>
         <a href="#"><img src="./img/icon/dribble-icon.svg" class="social-icon" alt="Dribble"></a>
       </div>
-      <p class="footer__follow-me text">
+      <p class="footer__follow-me">
         Like me&nbsp;on<br><a href="#">LinkedIn</a>, <a href="#">Instagram</a>, <a href="#">Behance</a>, <a
           href="#">Dribble</a>
       </p>
     </footer>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="./script.js"></script>
 </body>
 
