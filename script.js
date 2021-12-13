@@ -94,3 +94,37 @@ $(window).resize(function () {
         }
     }
 });
+// active menu-item at scrolling
+let sections = $('.nav-item');
+let nav = $('nav');
+let nav__height = nav.outerHeight();
+let windowHeight = $(window).height();
+
+$(window).on('scroll', function () {
+    let cur_pos = $(this).scrollTop();
+    sections.each(function () {
+        let top = $(this).offset().top - nav__height,
+            bottom = top + $(this).outerHeight();
+
+        if ($(this).attr('id') === 'contacts' && windowHeight >= $(this).outerHeight()) {
+            if (windowHeight >= nav__height) {
+                top = $(this).offset().top - (windowHeight - $(this).outerHeight() + 1);
+                console.log(top)
+
+            }
+        } else if ($(this).attr('id') === 'portfolio' && $(sections[4]).outerHeight() <= windowHeight) {
+            if (windowHeight >= nav__height) {
+                bottom = top + $(this).outerHeight() - (windowHeight - $(sections[4]).outerHeight()) -1;
+                console.log(bottom)
+            } else {
+                bottom = top + $(this).outerHeight() - nav__height;
+            }
+        }
+        console.log(cur_pos)
+        if (cur_pos >= top && cur_pos <= bottom) {
+            nav.find('a').removeClass('active');
+
+            nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+        }
+    });
+});
