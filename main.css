@@ -71,6 +71,8 @@ picture {
     background-color: #FFF;
 }
 
+.showOff {display: none !important;}
+
 a[href]:not([class]) {
     color: inherit;
     text-decoration: none;
@@ -145,11 +147,7 @@ a[href]:not([class]) {
 }
 
 .menu__list li:not(:last-child) {
-    margin-bottom: 2em;
-}
-
-.menu__list li:first-child {
-    color: #090909;
+    padding-bottom: 2em;
 }
 
 /* menu-burger */
@@ -164,10 +162,6 @@ a[href]:not([class]) {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-}
-
-.menu-icon.active {
-    position: fixed;
 }
 
 .menu-icon span {
@@ -204,32 +198,23 @@ a[href]:not([class]) {
     animation: ease .3s bottom-2 forwards;
 }
 
-.line {
-    position: absolute;
-    width: 100vw;
-    height: 1px;
-    right: 0;
-    bottom: 65px;
-    background-color: #000;
-    z-index: 9000;
-}
-
 /* переключалка меню */
-:ToDo .lang {
-    height: 1px;
-    width: calc(63/34 * 1em);
-    white-space: nowrap;
+.lang {
+    height: auto;
+    width: auto;
     position: absolute;
-    bottom: 311px;
-    right: 5.6667%;
+    bottom: 6.5rem;
+    right: 3rem;
     z-index: 400;
-    transform: rotate(90deg);
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .lang * {
     background: none;
     border: none;
     border-radius: 0;
+    writing-mode: vertical-rl;
     font-size: 1em;
     font-family: "Gilroy", sans-serif;
     font-weight: 700;
@@ -242,8 +227,13 @@ a[href]:not([class]) {
     animation: none;
 }
 
-.lang button:focus {
+.lang button.active, button:focus, button:active {
+    color: #070707;
+}
+
+.lang button {
     color: #828282;
+    cursor: pointer;
 }
 
 .header__info {
@@ -268,18 +258,36 @@ a[href]:not([class]) {
     line-height: 0;
 }
 
-.header__heading::before {
+#en.header__heading::before {
     content: "Denis";
     position: absolute;
     top: 1.8rem;
     left: 0;
+    color: #070707;
 }
 
-.header__heading::after {
+#en.header__heading::after {
     content: "Novik";
     position: absolute;
     top: calc(1em + 2.6rem);
     left: 0;
+    color: #070707;
+}
+
+#ru.header__heading::before {
+    content: "Денис";
+    position: absolute;
+    top: 1.8rem;
+    left: 0;
+    color: #070707;
+}
+
+#ru.header__heading::after {
+    content: "Новик";
+    position: absolute;
+    top: calc(1em + 2.6rem);
+    left: 0;
+    color: #070707;
 }
 
 .header__wrapper {
@@ -306,7 +314,7 @@ a[href]:not([class]) {
     }
 
     100% {
-        top: calc(50% - (3.84/19.19 * 100%)/2);
+        top: calc(50% - (3.84/19.19  * 100%)/2);
         transform: rotate(135deg);
         background-color: #828282;
     }
@@ -342,7 +350,7 @@ a[href]:not([class]) {
     }
 
     100% {
-        bottom: calc(50% - (3.84/19.19 * 100%)/2);
+        bottom: calc(50% - (3.84/19.19  * 100%)/2);
         transform: rotate(45deg);
         background-color: #828282;
     }
@@ -648,16 +656,16 @@ a[href]:not([class]) {
     }
 
     .menu__list li:not(:last-child) {
-        margin: 0;
+        padding: 0;
     }
 
-    :ToDo .lang {
-        width: 18px;
-        font-size: 16px;
+    .lang {
+        padding-right: 10%;
+        font-size: 1.6rem;
+        line-height: calc(19.81/16);
         position: static;
-        /* bottom: 61px;
-        right: 0px; */
         z-index: 0;
+        transform: scale(-1, -1);
     }
 
     .header__info {
@@ -834,6 +842,7 @@ a[href]:not([class]) {
         width: calc(180.5/18 * 1em);
         padding: 0;
         margin-bottom: 8.6rem;
+        color: #FFF;
     }
 
     .footer__social-icons {

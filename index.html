@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./main.css">
-  <title>DENIS NOVIK</title>
+  <title id="en">DENIS NOVIK</title>
+  <title id="ru">ДЕНИС НОВИК</title>
 </head>
 
 <body>
   <div class="wrapper">
     <header class="header" id="home">
-      <!-- <div class="line"></div>  -->
       <nav class="menu">
         <div class="menu-icon">
           <span></span>
@@ -21,23 +21,36 @@
         </div>
         <div class="menu__container">
           <ul class="menu__list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+            <!-- EN -->
+            <li id="en"><a href="#home">Home</a></li>
+            <li id="en"><a href="#about">About me</a></li>
+            <li id="en"><a href="#skills">Skills</a></li>
+            <li id="en"><a href="#portfolio">Portfolio</a></li>
+            <li id="en"><a href="#contacts">Contacts</a></li>
+            <!-- RU -->
+            <li id="ru"><a href="#home">Начало</a></li>
+            <li id="ru"><a href="#about">Обо мне</a></li>
+            <li id="ru"><a href="#skills">Навыки</a></li>
+            <li id="ru"><a href="#portfolio">Портфолио</a></li>
+            <li id="ru"><a href="#contacts">Контакты</a></li>
           </ul>
-          <!-- <div class="lang" id="lng">
-            <button class="lang__ru" name="ru">RU</button>
-            <span id="ne-balka-a-colona">|</span>
-            <button class="lang__eng" name="eng">ENG</button>
-          </div> -->
+          <div class="lang" id="lng">
+            <button class="lang__ru" name="ru">
+              <p>RU</p>
+            </button>
+            <span id="ne-balka-a-colona">&nbsp;|&nbsp;</span>
+            <button class="lang__eng" name="eng">
+              <p>ENG</p>
+            </button>
+          </div>
         </div>
       </nav>
 
       <div class="header__info">
-        <h1 class="header__heading"></h1>
-        <p class="text">UX|UI designer<br>24&nbsp;years old, Minsk</p>
+        <h1 class="header__heading" id="en"></h1>
+        <p class="text" id="en">UX|UI designer<br>24&nbsp;years old, Minsk</p>
+        <h1 class="header__heading" id="ru"></h1>
+        <p class="text" id="ru">UX|UI дизайнер<br>24&nbsp;года, Минск</p>
       </div>
       <div class="header__wrapper">
         <picture>
@@ -49,26 +62,49 @@
     </header>
     <main class="main">
       <section class="about" id="about">
-        <h2 class="about__heading heading">About&nbsp;me</h2>
+        <h2 class="about__heading heading" id="en">About&nbsp;me</h2>
+        <h2 class="about__heading heading" id="ru">Обо&nbsp;мне</h2>
         <ul class="about__description text">
-          <li class="about__description-item">
-            Hi, I&rsquo;m Denis&nbsp;&mdash; UX/UI designer from <br id="mobile__carryover">Minsk.<br
-              id="desktop__carryover"> I&rsquo;m interested in&nbsp;design
-            and<br id="mobile__carryover"> everything connected with&nbsp;it.
-          </li>
-          <li class="about__description-item">
-            I&rsquo;m studying at&nbsp;courses <br id="mobile__carryover">&laquo;Web and mobile design <br
-              id="desktop__carryover"> interfaces&raquo;<br id="mobile__carryover"> in&nbsp;IT-Academy.
-          </li>
-          <li class="about__description-item">
-            Ready to&nbsp;implement excellent<br id="mobile__carryover"> projects<br id="desktop__carryover"> with
-            wonderful people.
-          </li>
+          <div id="en">
+            <li class="about__description-item">
+              Hi, I&rsquo;m Denis&nbsp;&mdash; UX/UI designer from <br id="mobile__carryover">Minsk.<br
+                id="desktop__carryover"> I&rsquo;m interested in&nbsp;design
+              and<br id="mobile__carryover"> everything connected with&nbsp;it.
+            </li>
+            <li class="about__description-item">
+              I&rsquo;m studying at&nbsp;courses <br id="mobile__carryover">&laquo;Web and mobile design <br
+                id="desktop__carryover"> interfaces&raquo;<br id="mobile__carryover"> in&nbsp;IT-Academy.
+            </li>
+            <li class="about__description-item">
+              Ready to&nbsp;implement excellent<br id="mobile__carryover"> projects<br id="desktop__carryover"> with
+              wonderful people.
+            </li>
+          </div>
+          <div id="ru">
+            <li class="about__description-item">
+              Привет, я&nbsp;Денис&nbsp;&mdash; UX/UI дизайнер из <br id="mobile__carryover">Минска.<br
+                id="desktop__carryover"> Меня интересует дизайн и&nbsp;все, что с&nbsp;ним связано.
+            </li>
+            <li class="about__description-item">
+              Я&nbsp;учусь на&nbsp;курсах <br id="mobile__carryover">&laquo;Интерфейсы веб- и&nbsp;мобильного <br
+                id="desktop__carryover">дизайна&raquo;<br id="mobile__carryover"> в&nbsp;IT-Академии.
+            </li>
+            <li class="about__description-item">
+              Готовы реализовывать отличные<br id="mobile__carryover"> проекты<br id="desktop__carryover">
+              с&nbsp;замечательными людьми.
+            </li>
+          </div>
         </ul>
       </section>
       <section class="skills" id="skills">
-        <h2 class="skills__heading heading">Skills</h2>
-        <p class="skills__description text">I&nbsp;work in&nbsp;such programs&nbsp;as</p>
+        <div id="en">
+          <h2 class="skills__heading heading">Skills</h2>
+          <p class="skills__description text">I&nbsp;work in&nbsp;such programs&nbsp;as</p>
+        </div>
+        <div id="ru">
+          <h2 class="skills__heading heading">Навыки</h2>
+          <p class="skills__description text">Я&nbsp;работаю в&nbsp;таких программах, как</p>
+        </div>
         <div class="skillbox">
           <!-- Adobe Photoshop -->
           <figure class="skillbox__card">
@@ -99,14 +135,16 @@
         </div>
       </section>
       <section class="portfolio text" id="portfolio">
-        <h2 class="portfolio__heading heading">Portfolio</h2>
+        <h2 class="portfolio__heading heading" id="en">Portfolio</h2>
+        <h2 class="portfolio__heading heading" id="ru">Портфолио</h2>
         <div class="portfolio__card">
           <picture>
             <source srcset="./img/desk-fashion-store_web.jpg" media="(min-width: 769px)">
             <source srcset="./img/mob-fashion-store_web.jpg" media="(max-width: 768px)">
             <img src="./img/desk-fashion-store_web.jpg" alt="Picture of the home page of the online fashion store">
           </picture>
-          <h3 class="portfolio__card-title">Online fashion store&nbsp;&mdash; Homepage</h3>
+          <h3 class="portfolio__card-title" id="en">Online fashion store&nbsp;&mdash; Homepage</h3>
+          <h3 class="portfolio__card-title" id="ru">Домашняя страница интернет-магазина модной одежды</h3>
         </div>
         <div class="portfolio__card">
           <picture>
@@ -115,7 +153,8 @@
             <img src="./img/desk-reebok_web.jpg"
               alt="Picture of&nbsp;the concept of&nbsp;the &laquo;Reebok&raquo; online store">
           </picture>
-          <h3 class="portfolio__card-title">Reebok Store&nbsp;&mdash; Concept</h3>
+          <h3 class="portfolio__card-title" id="en">Reebok Store&nbsp;&mdash; Concept</h3>
+          <h3 class="portfolio__card-title" id="ru">Концепция магазина Reebok</h3>
         </div>
         <div class="portfolio__card">
           <picture>
@@ -123,27 +162,37 @@
             <source srcset="./img/mob-braun_web.jpg" media="(max-width: 768px)">
             <img src="./img/desk-braun_web.jpg" alt="Picture of&nbsp;the concept landing page &laquo;Braun&raquo;">
           </picture>
-          <h3 class="portfolio__card-title">Braun Landing Page&nbsp;&mdash; Concept</h3>
+          <h3 class="portfolio__card-title" id="en">Braun Landing Page&nbsp;&mdash; Concept</h3>
+          <h3 class="portfolio__card-title" id="ru">Концепция целевой страницы Braun</h3>
         </div>
       </section>
     </main>
     <footer class="footer text" id="contacts">
-      <h2 class="footer__heading heading">Contacts</h2>
-      <p class="footer__text">Want to&nbsp;know more or&nbsp;just chat?<br>You are welcome!</p>
-      <button class="footer__button text">Send message</button>
+      <!-- EN -->
+      <h2 class="footer__heading heading" id="en">Contacts</h2>
+      <p class="footer__text" id="en">Want to&nbsp;know more or&nbsp;just chat?<br>You are welcome!</p>
+      <button class="footer__button text" id="en">Send message</button>
+      <!-- RU -->
+      <h2 class="footer__heading heading" id="ru">Контакты</h2>
+      <p class="footer__text" id="ru">Хотите узнать больше или просто поболтать?<br>Добро пожаловать!</p>
+      <button class="footer__button text" id="ru">Отправить сообщение</button>
       <div class="footer__social-icons">
         <a href="#"><img src="./img/icon/linkedIn-icon.svg" class="social-icon" alt="LinkedIn"></a>
         <a href="#"><img src="./img/icon/instagram-icon.svg" class="social-icon" alt="Instagram"></a>
         <a href="#"><img src="./img/icon/behance-icon.svg" class="social-icon" alt="Behance"></a>
         <a href="#"><img src="./img/icon/dribble-icon.svg" class="social-icon" alt="Dribble"></a>
       </div>
-      <p class="footer__follow-me">
+      <p class="footer__follow-me" id="en">
         Like me&nbsp;on<br><a href="#">LinkedIn</a>, <a href="#">Instagram</a>, <a href="#">Behance</a>, <a
+          href="#">Dribble</a>
+      </p>
+      <p class="footer__follow-me" id="ru">
+        Оцените меня&nbsp;в<br><a href="#">LinkedIn</a>, <a href="#">Instagram</a>, <a href="#">Behance</a>, <a
           href="#">Dribble</a>
       </p>
     </footer>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./script.js"></script>
 </body>
 
