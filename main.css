@@ -71,7 +71,13 @@ picture {
     background-color: #FFF;
 }
 
-.showOff {display: none !important;}
+.showOff {
+    display: none !important;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
 
 a[href] {
     color: inherit;
@@ -141,13 +147,14 @@ a[href] {
     width: auto;
 }
 
-.menu__list a.active, a:focus, a:active {
+.menu__list a.active {
     color: #070707;
 }
 
 .menu__list li {
     display: block;
     color: #828282;
+    cursor: pointer;
 }
 
 .menu__list li:not(:last-child) {
@@ -231,7 +238,9 @@ a[href] {
     animation: none;
 }
 
-.lang button.active, button:focus, button:active {
+.lang button.active,
+.lang button:focus,
+.lang button:active {
     color: #070707;
 }
 
@@ -318,7 +327,7 @@ a[href] {
     }
 
     100% {
-        top: calc(50% - (3.84/19.19  * 100%)/2);
+        top: calc(50% - (3.84/19.19 * 100%)/2);
         transform: rotate(135deg);
         background-color: #828282;
     }
@@ -354,7 +363,7 @@ a[href] {
     }
 
     100% {
-        bottom: calc(50% - (3.84/19.19  * 100%)/2);
+        bottom: calc(50% - (3.84/19.19 * 100%)/2);
         transform: rotate(45deg);
         background-color: #828282;
     }
@@ -410,10 +419,6 @@ a[href] {
 .main {
     width: 100%;
     height: auto;
-}
-
-.no-scroll {
-    overflow: hidden;
 }
 
 .heading {
@@ -562,7 +567,6 @@ a[href] {
 
 .footer__heading {
     margin-bottom: 1.2941em;
-    /*44px w375*/
 }
 
 .footer__text {
@@ -573,12 +577,19 @@ a[href] {
     appearance: none;
     font-weight: 700;
     height: calc(42/18 * 1em);
-    width: 84.2667%;
+    width: auto;
+    min-width: calc(316/18 * 1em);
     margin-bottom: 2.6667em;
     border-radius: 50px;
     color: #FFF;
     background-color: #070707;
     box-shadow: 8px 10px 20px 0px #E7E7E7;
+}
+
+.footer__button:active,
+.footer__button:focus,
+.footer__button:hover {
+    color: #FFC0CB;
 }
 
 .footer__social-icons {
@@ -588,6 +599,10 @@ a[href] {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.footer__social-icons a {
+    width: calc(100%/7);
 }
 
 .social-icon {
@@ -635,7 +650,6 @@ a[href] {
     .menu__list {
         width: 100%;
         height: 100%;
-        font-size: 18px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -643,7 +657,7 @@ a[href] {
 
     .menu__list li {
         display: inline-block;
-        font-size: 18px;
+        font-size: 1.8rem;
         line-height: calc(22/18);
     }
 
@@ -683,7 +697,7 @@ a[href] {
 
     .header__heading {
         margin: 0;
-        font-size: 47px;
+        font-size: 4.7rem;
         width: calc(124/47 * 1em);
     }
 
@@ -695,11 +709,11 @@ a[href] {
     /* `____*____*_____MAIN_____*____*____` */
 
     .text {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 
     .heading {
-        font-size: 34px;
+        font-size: 3.4rem;
     }
 
     .about {
@@ -768,7 +782,7 @@ a[href] {
     }
 
     .skillbox__card figcaption {
-        font-size: 14px;
+        font-size: 1.4rem;
         margin: 1.5em 0 2.9286em 0;
     }
 
